@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PracticEx.Figures
 {
-    abstract class Figure
+    public abstract class Figure
     {
-        abstract public double getSquare();
+        abstract public double GetSquare();
     }
 }

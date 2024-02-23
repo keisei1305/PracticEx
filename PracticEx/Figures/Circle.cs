@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace PracticEx.Figures
 {
-    class Circle: Figure
+    public class Circle: Figure
     {
         double radius;
         public Circle(double radius)
         {
+            if (radius < 0) throw new ArgumentException("Радиус должен быть положительным");
             this.radius = radius;
         }
 
-        public override double getSquare()
+        public override double GetSquare()
         {
             return Math.PI * radius * radius;
         }
